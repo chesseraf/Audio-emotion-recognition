@@ -1,10 +1,10 @@
-# Audio Emotion Recognition using Deep Learning
+# Audio Emotion Regression
 ## Contact
-Name: Rafael Pashkov, Amirth Raj Puramcheriyil
+Names: Rafael Pashkov, Amirth Raj Puramcheriyil
 
-12/11/2025
+Date: 12/11/2025
 
-Deep learning 
+COMP 5530: Deep learning 
 
 ## How to run
 ### Opening the notebook on Google Colab
@@ -16,6 +16,7 @@ If that link does not work, follow these steps:
 1) Go to Github at https://github.com/chesseraf/Audio-emotion-recognition
 2) Open the only .ipynb file in the main branch of the repository.
 3) Click on the "Open in Colab" button at the top of the file.
+4) Click "Copy to Drive" in the toolbar at the top of the Colab page to save a copy of the notebook to your own google drive. This copy you can run and edit as directed in the rest of the instructions.
 
 To run it in Google Colab, you must be signed into a Google account. There is a enough 'colab points' given to run this project for free. In the unlikely scenario that your account does not have any points left, you can create a new Google account which will have enough points to run the project. For instructions on creating a new google accout, go [here](https://support.google.com/mail/answer/56256?hl=en).
 
@@ -35,14 +36,15 @@ CAUTION - if you choose this option, you will need to re-upload any files you up
 2) Create a folder with the name Data.
 3) Get a folder with the data downloaded onto your device but don't upload it to drive using one of the methods described above. 
 4) Right click the colab folder you created named Data, and click upload. Select some or all of the files from your downloaded folder with all of the data. Make sure that an .mp3 and .json file with the same prefix both get uploaded (by sorting the folder files alphabetically). 
-5) Change line 2 in the notebook from "DRIVE_MOUNTED = False" to "DRIVE_MOUNTED = True"
+5) Change line 2 in the notebook from "DRIVE_MOUNTED = True" to "DRIVE_MOUNTED = False".
 
 ### Running the program
 #### Run the program including training
-1) Click "Run All" in the top toolbar. 
-2) Wait for it all to run. Some results will appear in the cell with run epoch and the cell with ccc metrics.
-3) If you want to try your own mp3s, run steps 9 and 10 described below.
-#### No training, only using our trained model
+1) (Optional) If you have a lot of time and want to run many epochs during training, set EPOCHS to a higher number in the 5th cell of the notebook. Currently it is set to 50.
+2) Click "Run All" in the top toolbar. 
+3) Wait for it all to run. Some results will appear in the cell with run epoch and the cell with ccc metrics.
+4) If you want to try your own mp3s, run steps 9 and 10 described below.
+#### Run the program, but without training
 1) Download the folder w2v2_temporal_head from this repository.
 2) Upload that folder to the root directory of your Google drive. If you are not connecting your google drive, create a folder with that name in Colab and upload all (both) files from the downloaded folder into the one you created. 
 3) The path to this folder must be the same as the variable SAVE_DIR which is declared in the first cell of the notebook. (E.g. no (1) from multiple downloads)
