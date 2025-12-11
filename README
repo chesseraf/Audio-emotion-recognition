@@ -14,10 +14,10 @@ If that link does not work, follow these steps:
 2) Open the only .ipynb file in the main branch of the repository.
 3) Click on the "Open in Colab" button at the top of the file.
 
- To run it in Google Colab, you must be signed into a Google account. There is a enough 'colab points' given to run this project for free. In the unlikely scenario that your account does not have any points left, you can create a new Google account which will have enough points to run the project. For instructions on creating a new google accout, go [here](https://support.google.com/mail/answer/56256?hl=en).
+To run it in Google Colab, you must be signed into a Google account. There is a enough 'colab points' given to run this project for free. In the unlikely scenario that your account does not have any points left, you can create a new Google account which will have enough points to run the project. For instructions on creating a new google accout, go [here](https://support.google.com/mail/answer/56256?hl=en).
 
 ### Setting up the folders
- The first cell of the notebook requests to connect to the google drive of your google account. If you do not wish to connect your google drive to this, there are additional steps that must that are described in a subsection below. 
+The first cell of the notebook requests to connect to the google drive of your google account. If you do not wish to connect your google drive to this, there are additional steps that must that are described in a subsection below. 
 #### Once google drive is connected (mounted)
 There are three different ways to get the data to be seen by the program. Methods listed earlier are easier to do.
 1) Find the folder named Colab_Drive_Files which should be in the zip file submitted on blackboard. Upload this folder into the root directory of your google drive.
@@ -26,9 +26,11 @@ There are three different ways to get the data to be seen by the program. Method
 
 3) This is what we did to get the data originally. Go to [HuggingFace](https://huggingface.co/datasets/laion/Emilia-with-Emotion-Annotations2/tree/main). Scroll down until the data files start with EN and not DE. Download one of them. Then unzip it. Then open the folder with the files sorted alphabetically. Keep only a small quantity (~800 mp3-json pairs with same prefix) of the files since google drive does not allow too many files in a folder, and the program runs faster. Upload this folder into your google drive into a folder named Colab_Drive_Files.
 
- #### Using built in files intead of drive
- 1) In this case, you must add the data you wish to use directly to the colab workspace instead of putting into your google drive. The files tab is the 2nd from the bottom icon on the left sidebar. 
- 2) Create a folder with the name Data.
- 3) Get a folder with the data downloaded onto your device but don't upload it to drive using one of the methods described above. 
- 4) Right click the colab folder you created named Data, and click upload. Select some or all of the files from your downloaded folder with all of the data. Make sure that an .mp3 and .json file with the same prefix both get uploaded (by sorting the folder files alphabetically). 
- 5) Change line 2 in the notebook from "DRIVE_MOUNTED = False" to "DRIVE_MOUNTED = True"
+#### Using built in files intead of drive
+1) In this case, you must add the data you wish to use directly to the colab workspace instead of putting into your google drive. The files tab is the 2nd from the bottom icon on the left sidebar. 
+2) Create a folder with the name Data.
+3) Get a folder with the data downloaded onto your device but don't upload it to drive using one of the methods described above. 
+4) Right click the colab folder you created named Data, and click upload. Select some or all of the files from your downloaded folder with all of the data. Make sure that an .mp3 and .json file with the same prefix both get uploaded (by sorting the folder files alphabetically). 
+5) Change line 2 in the notebook from "DRIVE_MOUNTED = False" to "DRIVE_MOUNTED = True"
+
+#### 
